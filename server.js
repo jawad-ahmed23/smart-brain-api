@@ -47,6 +47,6 @@ app.post("/imageurl", (req, res) => {
 });
 
 //Port
-app.listen(8080, () => {
-  console.log("app is running");
+app.listen(process.env.PORT || 8080, () => {
+  console.log(`app is runing on ${process.env.PORT}`);
 });
